@@ -1,1 +1,43 @@
-<mxfile host="www.draw.io" modified="2020-02-20T08:28:56.037Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="stXKNe1nknM3SWDPX4wa" version="12.7.2" type="github"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">zZVvb9owEMY/DS8rkaQE+rKhf8a2Vp2gQ3vpxUfs4fiYbQjpp9+FGEIIWtVJSHtzsn++3OHnuYReNM63j4atxBNyUL2wz7e96K4XhjfDmGIFyhoMRqMaZEbyGgUNmMo38LDv6VpysK1Eh6icXLVhilpD6lqMGYNFO22Bqt11xTLogGnKVJfOJXeipqNw2PBPIDOx7xzEN/VJzvbJ/iZWMI7FEYrue9HYILp6lW/HoCrt9rrMJ+VcfV3Gj5+/2d/sNfkye/5+VRd7+MgjhysY0O6fSz9Hv9hk/OPNpE+xkC/ODcv4KqpLb5hae71mAqpeBlOwlla4oGBgYcCKyhLNq+P1TyV3e4cUNBQUX29nFAs0S7tiKXjRXLl3wsGWfn0iXK4IBLS0zuASxqjQENGoKTNZSKVOEFMy07RN6f5APNmAcZI8vvUHueS8apMUQjqY7tpHdwUNNDGDa82hUqFPO39hKgDbkwl5R97g4Dm9K4A5OFPSc75KGPsxKdvzXzRDFw48E62B85D5Qc8OpRszaeH9/IC31x1vFWZSE3rBgmQM+8mkerHBLh2uqmr64KIFs9mlFNKJE4dZmpKirhkGZi25zjuGt4U/Z83RLFzMl2Hbl/D6jDHhGWPiS/ky6PjyF+WC/0e5ILqccrRtPqS7s6N/o+j+Dw==</diagram></mxfile>
+<mxfile host="www.draw.io" modified="2020-02-20T09:15:59.824Z" agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36" etag="vjOXVyqPkwlEadJDDaW4" version="12.7.2" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="976" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="N3jaICYzrcM6hiPtt7y6-3" value="The process of refresh and publish to new UAT workspace" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="260" y="10" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="5viADOfZp2H7_eaUKS3_-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="N3jaICYzrcM6hiPtt7y6-4" target="5viADOfZp2H7_eaUKS3_-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3jaICYzrcM6hiPtt7y6-4" value="login Power BI desktop in UAT server with new UAT account and password" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="270" y="490" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5viADOfZp2H7_eaUKS3_-3" value="In UAT server, &lt;br&gt;&lt;br&gt;Modified the script &quot;C:\TRF\PBI\Script\Publish.ps1&quot;:&lt;br&gt;&lt;ul&gt;&lt;li&gt;Replace&amp;nbsp;&lt;font color=&quot;#ff6666&quot;&gt;$kvclientSecret &lt;/font&gt;with an approved Azure Key Vault secret;&lt;/li&gt;&lt;li&gt;Replace&amp;nbsp;&lt;font color=&quot;#ff0000&quot;&gt;$kvSecretname&lt;/font&gt; with corresponding item name of new UAT account in Azure Key Vault.&lt;/li&gt;&lt;li&gt;Replace&lt;font color=&quot;#ff0000&quot;&gt; $client_id &lt;/font&gt;with Azure Application ID&lt;br&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;Modified the script&amp;nbsp;&quot;C:\TRF\PBI\Script\run Python robot to refresh dataset and publish - UAT.ps1&quot;, replace the two variable with new work space name and UAT ipbx file name.&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;$WorkSpaceName&lt;/li&gt;&lt;li&gt;$DataSetName&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="170" y="590" width="420" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="5viADOfZp2H7_eaUKS3_-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="N3jaICYzrcM6hiPtt7y6-5" target="5viADOfZp2H7_eaUKS3_-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N3jaICYzrcM6hiPtt7y6-5" value="Register the new account in Azure AD and get the Application ID&amp;nbsp;and ClientSecret, grant read and write permission for API operation." style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="270" y="130" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5viADOfZp2H7_eaUKS3_-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5viADOfZp2H7_eaUKS3_-0" target="N3jaICYzrcM6hiPtt7y6-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5viADOfZp2H7_eaUKS3_-0" value="Store the ClientSecret in Azure Key Vault and get the Permission to access this ClientSecret by API" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="270" y="370" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5viADOfZp2H7_eaUKS3_-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5viADOfZp2H7_eaUKS3_-9" target="5viADOfZp2H7_eaUKS3_-0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5viADOfZp2H7_eaUKS3_-9" value="Create workspace and assign a name for the to be uploaded pbix file, let&#39;s name it BP_PO_UAT_1_1.pbix" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="270" y="250" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5viADOfZp2H7_eaUKS3_-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="330" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
